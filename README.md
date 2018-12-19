@@ -81,6 +81,24 @@ npm run mongo
 
 and your mongo server has started
 
-## Be corious
+## Be curious
 
 Now you have a skeleton API and an example API (this project).
+
+## Run this example project
+
+From command line
+
+- run `npm run mongo`
+- run `npm run dev`
+
+and check under `http://localhost:3001/documentation`.
+
+Happy coding :heart:
+
+# Useful documentation
+
+[Fastify](https://www.fastify.io/)
+[Fastify Mongo](https://github.com/fastify/fastify-mongodb)
+[Fastify Swagger](https://github.com/fastify/fastify-swagger)
+[Fastify Oauth](https://github.com/fastify/fastify-oauth2)
