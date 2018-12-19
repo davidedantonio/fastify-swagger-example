@@ -6,7 +6,7 @@ You need to have pre-installed on your machine
 - MongoDB
 - Node.js and npm
 
-If you don't want to install MongoDB on your machine use Docker and run from command license
+If you don't want to install [MongoDB](https://www.mongodb.com/it) on your machine use [Docker](https://www.docker.com/) and run from command license
 
 ```
 docker pull mongo:4.0.3
@@ -52,4 +52,35 @@ your-awesome-api/
           └── root.test.js
 ```
 
-Execute `npm install` an install all dependecies.
+Execute `npm install` an install all dependecies. After, to proceed with example install theese dependencies:
+
+```
+npm install --save fastify-swagger fastify-mongodb
+```
+
+Create `.env` file and insert theese lines:
+
+```
+PORT=3001
+MONGODB_URL=mongodb://localhost:27017/tables
+```
+
+## If you decided to use docker
+
+If you have decided to use docker add in your `package.json` file following line under `script`
+
+```
+"mongo": "docker run -p 27017:27017 mongo:4.0.3"
+```
+
+In the future before you start the application run
+
+```
+npm run mongo
+```
+
+and your mongo server has started
+
+## Be corious
+
+Now you have a skeleton API and an example API (this project).
