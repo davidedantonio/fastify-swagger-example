@@ -1,0 +1,37 @@
+{
+  "name": "fastify-swagger-example",
+  "version": "1.0.0",
+  "description": "Fastify Swagger Example API",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "mongo": "docker run -p 27017:27017 mongo:4.0.3",
+    "test": "tap test/**/*.test.js",
+    "start": "fastify start -l info app.js",
+    "dev": "fastify start -l info -P app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidedantonio/fastify-swagger-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidedantonio/fastify-swagger-example/issues"
+  },
+  "homepage": "https://github.com/davidedantonio/fastify-swagger-example#readme",
+  "dependencies": {
+    "fastify": "^1.11.0",
+    "fastify-autoload": "^0.5.0",
+    "fastify-cli": "^0.26.2",
+    "fastify-mongodb": "^1.0.0",
+    "fastify-plugin": "^1.2.0",
+    "fastify-swagger": "^0.16.2"
+  },
+  "devDependencies": {
+    "tap": "^12.0.0"
+  }
+}
